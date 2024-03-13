@@ -8,6 +8,9 @@ module.exports = {
         "soft-red": "hsl(0, 93%, 68%)",
         "dark-grayish-red": "hsl(0, 6%, 24%)",
       },
+      fontFamily: {
+        primary: ["Josefin Sans", "sans-serif"],
+      },
       backgroundImage: () => ({
         "gradient-to-neutral":
           "linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))",
