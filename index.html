@@ -41,14 +41,15 @@
       /></a>
     </header>
 
-    <div class="[grid-area:image]">
-      <picture>
+    <div class="[grid-area:image] w-fit sm:place-self-end">
+      <picture class="block w-fit h-full">
         <source
           media="(min-width: 376px)"
           srcset="./assets/images/hero-desktop.webp"
           type="image/webp"
         />
         <img
+          class="object-fill h-full object-center"
           src="./assets/images/hero-mobile.webp"
           alt="Girl with brown hair and orange shirt with trees in the background"
         />
@@ -79,26 +80,31 @@
           name="email"
           id="email"
           placeholder="Email Address"
+          required
         />
         <button
           type="submit"
           class="w-20 rounded-full grid place-items-center bg-gradient-to-primary shadow-[0_10px_20px_0] shadow-desaturated-red"
         >
-          <img src="./assets/images/icon-arrow.svg" alt="" />
+          <img src="./assets/images/icon-arrow.svg" alt="right arrow icon" />
         </button>
       </form>
     </main>
 
-    <footer class="text-center text-lg mt-8 font-semibold [grid-area:footer]">
+    <footer
+      class="text-center text-base mt-8 px-8 font-semibold [grid-area:footer]"
+    >
       <p class="attribution">
         Challenge by
         <a
+          class="bg-soft-red text-white"
           rel="noreferrer"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a
+          class="bg-soft-red text-white"
           rel="noreferrer"
           target="_blank"
           href="https://www.frontendmentor.io/profile/Fejiro001"
