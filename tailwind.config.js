@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         primary: ["Josefin Sans", "sans-serif"],
       },
-      backgroundImage: () => ({
+      backgroundImage: (theme) => ({
         "gradient-to-neutral":
           "linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))",
         "gradient-to-primary":
