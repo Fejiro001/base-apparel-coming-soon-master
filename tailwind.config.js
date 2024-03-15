@@ -2,6 +2,9 @@
 module.exports = {
   content: ["index.html", "script.js"],
   theme: {
+    screens: {
+      sm: "600px",
+    },
     extend: {
       colors: {
         "desaturated-red": "hsl(0, 36%, 70%)",

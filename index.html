@@ -31,14 +31,17 @@
     <title>Base Apparel coming soon page</title>
   </head>
 
-  <body class="font-primary bg-gradient-to-neutral min-h-dvh">
-    <header class="p-8">
+  <body class="font-primary bg-gradient-to-neutral min-h-dvh sm:grid-areas">
+    <header class="p-8 [grid-area:header]">
       <a class="" href="#"
-        ><img class="h-auto w-32" src="./assets/images/logo.svg" alt="Base Apparel logo"
+        ><img
+          class="h-auto w-24"
+          src="./assets/images/logo.svg"
+          alt="Base Apparel logo"
       /></a>
     </header>
 
-    <div class="">
+    <div class="[grid-area:image]">
       <picture>
         <source
           media="(min-width: 376px)"
@@ -52,21 +55,41 @@
       </picture>
     </div>
 
-    <main class="text-center">
-      <h1>We're coming soon</h1>
-      <p>
+    <main class="text-center px-8 pt-16 [grid-area:main]">
+      <h1 class="text-4xl uppercase tracking-[0.4em]">
+        <span class="block text-desaturated-red font-light">We're</span
+        ><span class="font-semibold text-dark-grayish-red"
+          >coming <br />soon</span
+        >
+      </h1>
+
+      <p class="text-desaturated-red text-sm mt-6 font-normal">
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-      <form action="">
+
+      <form
+        class="h-12 mt-10 border-desaturated-red rounded-full border flex justify-between"
+      >
         <label for="email"></label>
-        <input type="email" name="" id="email" placeholder="Email Address" />
-        <button type="submit"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        <input
+          class="w-full px-6 rounded-full focus:outline-none placeholder:text-desaturated-red/50 placeholder:text-sm bg-transparent"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address"
+        />
+        <button
+          type="submit"
+          class="w-20 rounded-full grid place-items-center bg-gradient-to-primary shadow-[0_10px_20px_0] shadow-desaturated-red"
+        >
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </button>
       </form>
     </main>
 
-    <footer>
+    <footer class="text-center text-lg mt-8 font-semibold [grid-area:footer]">
       <p class="attribution">
         Challenge by
         <a
@@ -75,7 +98,12 @@
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a rel="noreferrer" target="_blank" href="https://www.frontendmentor.io/profile/Fejiro001">Fejiro Abere</a>.
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://www.frontendmentor.io/profile/Fejiro001"
+          >Fejiro Abere</a
+        >.
       </p>
     </footer>
   </body>

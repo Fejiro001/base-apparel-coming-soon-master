@@ -11,3 +11,15 @@
     font-weight: 300 400 600;
   }
 }
+
+@layer components {
+  .grid-areas {
+    display: grid;
+    grid-template-areas:
+      "header image"
+      "main image"
+      "footer image";
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
