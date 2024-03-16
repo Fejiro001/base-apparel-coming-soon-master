@@ -906,4 +906,8 @@ html {
   .md\:pt-0 {
     padding-top: 0px;
   }
+
+  .md\:text-start {
+    text-align: start;
+  }
 }
