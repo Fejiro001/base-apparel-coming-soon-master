@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @font-face {
     font-family: "Josefin Sans";
     src: url(../assets/font/JosefinSans-VariableFont_wght.ttf);

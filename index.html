@@ -31,32 +31,34 @@
     <title>Base Apparel coming soon page</title>
   </head>
 
-  <body class="font-primary bg-gradient-to-neutral min-h-dvh sm:grid-areas">
-    <header class="p-8 [grid-area:header]">
+  <body class="font-primary bg-gradient-to-neutral min-h-dvh md:grid-areas">
+    <header class="p-8 [grid-area:header] md:pt-16 md:ps-[10.5rem]">
       <a class="" href="#"
         ><img
-          class="h-auto w-24"
+          class="h-auto w-24 md:w-[10rem]"
           src="./assets/images/logo.svg"
           alt="Base Apparel logo"
       /></a>
     </header>
 
-    <div class="[grid-area:image] w-fit sm:place-self-end">
-      <picture class="block w-fit h-full">
+    <div
+      class="[grid-area:image] w-fit sm:w-full md:w-fit sm:grid md:place-self-end"
+    >
+      <picture class="block w-fit sm:w-full md:h-screen">
         <source
           media="(min-width: 376px)"
           srcset="./assets/images/hero-desktop.webp"
           type="image/webp"
         />
         <img
-          class="object-fill h-full object-center"
+          class="object-contain sm:w-full md:w-fit sm:object-fill h-full object-center"
           src="./assets/images/hero-mobile.webp"
           alt="Girl with brown hair and orange shirt with trees in the background"
         />
       </picture>
     </div>
 
-    <main class="text-center px-8 pt-16 [grid-area:main]">
+    <main class="text-center px-8 pt-16 md:pt-0 [grid-area:main]">
       <h1 class="text-4xl uppercase tracking-[0.4em]">
         <span class="block text-desaturated-red font-light">We're</span
         ><span class="font-semibold text-dark-grayish-red"
