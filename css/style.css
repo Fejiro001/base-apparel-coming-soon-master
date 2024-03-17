@@ -27,4 +27,7 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
   }
+  .focus-element {
+    @apply ring-soft-red ring-2 ring-offset-2;
+  }
 }

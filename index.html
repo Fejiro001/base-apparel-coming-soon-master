@@ -15,8 +15,19 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <link rel="preload" href="./assets/images/hero-desktop.webp" as="image" />
-    <link rel="preload" href="./assets/images/hero-tablet.webp" as="image" />
+    <link
+      rel="preload"
+      href="./assets/images/hero-desktop.webp"
+      as="image"
+      media="(min-width: 1388px)"
+    />
+    <link
+      rel="preload"
+      href="./assets/images/hero-tablet.webp"
+      as="image"
+      media="(min-width:
+    376px)"
+    />
     <link rel="preload" href="./assets/images/hero-mobile.webp" as="image" />
 
     <link
@@ -32,9 +43,13 @@
     <title>Base Apparel coming soon page</title>
   </head>
 
-  <body class="font-primary bg-gradient-to-neutral min-h-dvh md:grid-areas max-w-[1800px]">
+  <body
+    class="font-primary bg-gradient-to-neutral min-h-dvh md:grid-areas max-w-[1800px]"
+  >
     <header class="p-8 [grid-area:header] md:py-16 md:ps-[10.5rem]">
-      <a class="" href="#"
+      <a
+        class="block focus:outline-none focus-within:focus-element w-fit"
+        href="#"
         ><img
           class="h-auto w-24 md:w-[10rem]"
           src="./assets/images/logo.svg"
@@ -65,10 +80,10 @@
     </div>
 
     <main
-      class="text-center md:text-start px-8 md:ps-[10.5rem] pt-16 md:pt-0 [grid-area:main] md:pe-28"
+      class="text-center md:text-start px-8 md:ps-[10.5rem] pt-16 md:pt-0 [grid-area:main] md:pe-28 md:mt-8"
     >
       <h1
-        class="text-4xl uppercase tracking-[0.38em] leading-10 sm:leading-[4.8rem]"
+        class="text-4xl uppercase tracking-[0.38em] leading-10 sm:leading-[4.4rem]"
       >
         <span class="block text-desaturated-red font-light">We're</span
         ><span class="font-semibold text-dark-grayish-red"
@@ -76,16 +91,14 @@
         >
       </h1>
 
-      <p
-        class="text-desaturated-red text-sm pt-6 font-normal md:pt-[0.8rem]"
-      >
+      <p class="text-desaturated-red text-sm pt-6 font-normal md:pt-[1rem]">
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
 
       <form
-        class="h-12 md:h-14 mt-10 md:mt-12 border-desaturated-red rounded-full border flex justify-between md:max-w-[438px]"
+        class="h-12 md:h-14 mt-10 md:mt-14 ring-desaturated-red ring-1 ring-inset rounded-full flex items-center justify-between md:max-w-[438px] md:mb-1"
       >
         <label for="email"></label>
         <input
@@ -94,31 +107,44 @@
           name="email"
           id="email"
           placeholder="Email Address"
+          pattern="^\w+([\._%+-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$"
           required
         />
+
+        <img
+          id="error-icon"
+          src="./assets/images/icon-error.svg"
+          class="size-7 me-4 hidden"
+          alt="error icon"
+        />
+
         <button
+          id="submit-email"
           type="submit"
-          class="w-20 md:w-32 rounded-full grid place-items-center bg-gradient-to-primary shadow-[0_10px_20px_0] shadow-desaturated-red"
+          class="w-24 md:w-36 rounded-full grid place-items-center bg-gradient-to-primary shadow-[0_10px_20px_0] shadow-desaturated-red focus:outline-none focus-within:focus-element h-full"
         >
           <img src="./assets/images/icon-arrow.svg" alt="right arrow icon" />
         </button>
       </form>
+      <span id="error-message" class="text-soft-red text-[0.8rem] mx-8 hidden"
+        >Please provide a valid email</span
+      >
     </main>
 
     <footer
-      class="text-center text-base mt-8 px-8 font-semibold [grid-area:footer]"
+      class="text-center text-sm mt-8 px-8 font-semibold [grid-area:footer]"
     >
-      <p class="attribution">
+      <p class="">
         Challenge by
         <a
-          class=""
+          class="focus:outline-none focus-within:focus-element"
           rel="noreferrer"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a
-          class=""
+          class="focus:outline-none focus-within:focus-element"
           rel="noreferrer"
           target="_blank"
           href="https://www.frontendmentor.io/profile/Fejiro001"
