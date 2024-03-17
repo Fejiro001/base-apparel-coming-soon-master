@@ -615,6 +615,10 @@ html {
   width: 100%;
 }
 
+.max-w-\[1800px\] {
+  max-width: 1800px;
+}
+
 .place-items-center {
   place-items: center;
 }
@@ -762,7 +766,7 @@ html {
   grid-area: main;
 }
 
-@media (min-width: 974px) {
+@media (min-width: 1300px) {
   .md\:grid-areas {
     display: grid;
     grid-template-areas:
@@ -804,15 +808,18 @@ html {
     width: 100%;
   }
 
-  .sm\:object-fill {
-    -o-object-fit: fill;
-       object-fit: fill;
+  .sm\:leading-\[4\.8rem\] {
+    line-height: 4.8rem;
   }
 }
 
-@media (min-width: 974px) {
+@media (min-width: 1300px) {
   .md\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .md\:aspect-\[610px\/800px\] {
+    aspect-ratio: 610px/800px;
   }
 
   .md\:h-14 {
@@ -821,6 +828,10 @@ html {
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:w-32 {
+    width: 8rem;
   }
 
   .md\:w-\[10rem\] {
@@ -832,6 +843,10 @@ html {
     width: fit-content;
   }
 
+  .md\:max-w-\[438px\] {
+    max-width: 438px;
+  }
+
   .md\:place-self-end {
     place-self: end;
   }
@@ -841,8 +856,8 @@ html {
     padding-bottom: 4rem;
   }
 
-  .md\:pe-20 {
-    padding-inline-end: 5rem;
+  .md\:pe-28 {
+    padding-inline-end: 7rem;
   }
 
   .md\:ps-\[10\.5rem\] {
@@ -859,9 +874,5 @@ html {
 
   .md\:text-start {
     text-align: start;
-  }
-
-  .md\:leading-\[4\.8rem\] {
-    line-height: 4.8rem;
   }
 }
