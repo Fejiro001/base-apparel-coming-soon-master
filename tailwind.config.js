@@ -15,6 +15,10 @@ module.exports = {
       fontFamily: {
         primary: ["Josefin Sans", "sans-serif"],
       },
+      fontSize: {
+        "4xl": "clamp(2.25rem, 4.1vw, 4rem)",
+        sm: "clamp(0.875rem, 1.1vw, 2rem)",
+      },
       backgroundImage: (theme) => ({
         "gradient-to-neutral":
           "linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))",

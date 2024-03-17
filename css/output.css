@@ -566,10 +566,6 @@ html {
   margin-top: 2.5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -680,6 +676,10 @@ html {
   padding-top: 4rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -689,8 +689,7 @@ html {
 }
 
 .text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: clamp(2.25rem, 4.1vw, 4rem);
 }
 
 .text-base {
@@ -699,8 +698,7 @@ html {
 }
 
 .text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: clamp(0.875rem, 1.1vw, 2rem);
 }
 
 .font-light {
@@ -719,8 +717,12 @@ html {
   text-transform: uppercase;
 }
 
-.tracking-\[0\.4em\] {
-  letter-spacing: 0.4em;
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.tracking-\[0\.38em\] {
+  letter-spacing: 0.38em;
 }
 
 .text-dark-grayish-red {
@@ -773,13 +775,11 @@ html {
 }
 
 .placeholder\:text-sm::-moz-placeholder {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: clamp(0.875rem, 1.1vw, 2rem);
 }
 
 .placeholder\:text-sm::placeholder {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: clamp(0.875rem, 1.1vw, 2rem);
 }
 
 .placeholder\:text-desaturated-red\/50::-moz-placeholder {
@@ -811,8 +811,20 @@ html {
 }
 
 @media (min-width: 974px) {
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:w-\[10rem\] {
+    width: 10rem;
   }
 
   .md\:w-fit {
@@ -820,36 +832,8 @@ html {
     width: fit-content;
   }
 
-  .md\:w-32 {
-    width: 8rem;
-  }
-
-  .md\:w-36 {
-    width: 9rem;
-  }
-
-  .md\:w-\[10rem\] {
-    width: 10rem;
-  }
-
   .md\:place-self-end {
     place-self: end;
-  }
-
-  .md\:p-12 {
-    padding: 3rem;
-  }
-
-  .md\:p-16 {
-    padding: 4rem;
-  }
-
-  .md\:p-20 {
-    padding: 5rem;
-  }
-
-  .md\:p-1 {
-    padding: 0.25rem;
   }
 
   .md\:py-16 {
@@ -857,46 +841,8 @@ html {
     padding-bottom: 4rem;
   }
 
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .md\:px-24 {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
-
-  .md\:pt-16 {
-    padding-top: 4rem;
-  }
-
-  .md\:ps-24 {
-    padding-inline-start: 6rem;
-  }
-
-  .md\:ps-32 {
-    padding-inline-start: 8rem;
-  }
-
-  .md\:ps-36 {
-    padding-inline-start: 9rem;
-  }
-
-  .md\:ps-40 {
-    padding-inline-start: 10rem;
-  }
-
-  .md\:ps-\[10\.2rem\] {
-    padding-inline-start: 10.2rem;
-  }
-
-  .md\:ps-\[10\.3rem\] {
-    padding-inline-start: 10.3rem;
-  }
-
-  .md\:ps-\[10\.4rem\] {
-    padding-inline-start: 10.4rem;
+  .md\:pe-20 {
+    padding-inline-end: 5rem;
   }
 
   .md\:ps-\[10\.5rem\] {
@@ -907,7 +853,15 @@ html {
     padding-top: 0px;
   }
 
+  .md\:pt-\[0\.8rem\] {
+    padding-top: 0.8rem;
+  }
+
   .md\:text-start {
     text-align: start;
+  }
+
+  .md\:leading-\[4\.8rem\] {
+    line-height: 4.8rem;
   }
 }
