@@ -21,9 +21,11 @@ module.exports = {
       },
       backgroundImage: () => ({
         "gradient-to-neutral":
-          "linear-gradient(135deg, hsl(0, 100%, 90%), hsl(0, 74%, 85%))",
+          "linear-gradient(135deg, hsl(0, 100%, 90%), hsl(0, 100%, 98%)",
         "gradient-to-primary":
           "linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%))",
+        "hover-color":
+          "linear-gradient(135deg, hsl(0, 100%, 90%), hsl(0, 74%, 85%))",
       }),
     },
   },
