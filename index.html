@@ -44,11 +44,11 @@
   </head>
 
   <body
-    class="font-primary bg-gradient-to-neutral min-h-dvh md:grid-areas max-w-[1800px]"
+    class="font-primary bg-gradient-to-neutral min-h-dvh md:grid-areas max-w-[1800px] md:[background-image:url('../assets/images/bg-pattern-desktop.svg')]"
   >
     <header class="p-8 [grid-area:header] md:py-16 md:ps-[10.5rem]">
       <a
-        class="block focus:outline-none focus-within:focus-element w-fit"
+        class="block focus:outline-none focus-visible:focus-element w-fit"
         href="#"
         ><img
           class="h-auto w-24 md:w-[10rem]"
@@ -98,7 +98,8 @@
       </p>
 
       <form
-        class="h-12 md:h-14 mt-10 md:mt-14 ring-desaturated-red ring-1 ring-inset rounded-full flex items-center justify-between md:max-w-[438px] md:mb-1"
+        class="h-12 md:h-14 mt-10 md:mt-14 border-desaturated-red border-2 rounded-full flex items-center justify-between md:max-w-[438px] md:mb-1"
+        id="form-element"
       >
         <label for="email"></label>
         <input
@@ -107,7 +108,7 @@
           name="email"
           id="email"
           placeholder="Email Address"
-          pattern="^\w+([\._%+-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$"
+          pattern="[a-zA-Z0-9.#_%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
           required
         />
 
@@ -120,14 +121,13 @@
 
         <button
           id="submit-email"
-          type="submit"
-          class="w-24 md:w-36 rounded-full grid place-items-center bg-gradient-to-primary shadow-[0_10px_20px_0] shadow-desaturated-red focus:outline-none focus-within:focus-element h-full"
+          class="w-24 md:w-36 rounded-full grid place-items-center bg-gradient-to-primary hover:bg-gradient-to-neutral focus:bg-gradient-to-neutral active:bg-gradient-to-neutral shadow-[0_10px_20px_0] shadow-desaturated-red focus:outline-none focus-visible:focus-element h-full"
         >
           <img src="./assets/images/icon-arrow.svg" alt="right arrow icon" />
         </button>
       </form>
-      <span id="error-message" class="text-soft-red text-[0.8rem] mx-8 hidden"
-        >Please provide a valid email</span
+      <span id="error-message" class="text-[0.8rem] mx-8 hidden"
+        ></span
       >
     </main>
 
@@ -137,14 +137,14 @@
       <p class="">
         Challenge by
         <a
-          class="focus:outline-none focus-within:focus-element"
+          class="focus:outline-none focus-visible:focus-element"
           rel="noreferrer"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
         >. Coded by
         <a
-          class="focus:outline-none focus-within:focus-element"
+          class="focus:outline-none focus-visible:focus-element"
           rel="noreferrer"
           target="_blank"
           href="https://www.frontendmentor.io/profile/Fejiro001"
@@ -152,6 +152,8 @@
         >.
       </p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
 
